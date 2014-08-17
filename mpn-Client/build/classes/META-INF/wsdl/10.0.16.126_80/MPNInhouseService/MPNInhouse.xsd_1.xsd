@@ -1,0 +1,1042 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1.1-b09 (branches/2.1-6834; 2011-07-16T17:14:48+0000) JAXWS-RI/2.2.5-promoted-b04 JAXWS/2.2. --><xs:schema xmlns:tns="http://service.mpn.customs.go.id/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service.mpn.customs.go.id/">
+
+<xs:element name="getBilling" type="tns:getBilling"/>
+
+<xs:element name="getBillingResponse" type="tns:getBillingResponse"/>
+
+<xs:element name="getDataBillingAllBytglDokKantor" type="tns:getDataBillingAllBytglDokKantor"/>
+
+<xs:element name="getDataBillingAllBytglDokKantorJns" type="tns:getDataBillingAllBytglDokKantorJns"/>
+
+<xs:element name="getDataBillingAllBytglDokKantorJnsResponse" type="tns:getDataBillingAllBytglDokKantorJnsResponse"/>
+
+<xs:element name="getDataBillingAllBytglDokKantorNo" type="tns:getDataBillingAllBytglDokKantorNo"/>
+
+<xs:element name="getDataBillingAllBytglDokKantorNoResponse" type="tns:getDataBillingAllBytglDokKantorNoResponse"/>
+
+<xs:element name="getDataBillingAllBytglDokKantorResponse" type="tns:getDataBillingAllBytglDokKantorResponse"/>
+
+<xs:element name="getDataBillingBatalBytglDok" type="tns:getDataBillingBatalBytglDok"/>
+
+<xs:element name="getDataBillingBatalBytglDokBill" type="tns:getDataBillingBatalBytglDokBill"/>
+
+<xs:element name="getDataBillingBatalBytglDokBillResponse" type="tns:getDataBillingBatalBytglDokBillResponse"/>
+
+<xs:element name="getDataBillingBatalBytglDokNo" type="tns:getDataBillingBatalBytglDokNo"/>
+
+<xs:element name="getDataBillingBatalBytglDokNoResponse" type="tns:getDataBillingBatalBytglDokNoResponse"/>
+
+<xs:element name="getDataBillingBatalBytglDokResponse" type="tns:getDataBillingBatalBytglDokResponse"/>
+
+<xs:element name="getDataBillingBlmLnsBytglDokKantor" type="tns:getDataBillingBlmLnsBytglDokKantor"/>
+
+<xs:element name="getDataBillingBlmLnsBytglDokKantorJns" type="tns:getDataBillingBlmLnsBytglDokKantorJns"/>
+
+<xs:element name="getDataBillingBlmLnsBytglDokKantorJnsResponse" type="tns:getDataBillingBlmLnsBytglDokKantorJnsResponse"/>
+
+<xs:element name="getDataBillingBlmLnsBytglDokKantorNo" type="tns:getDataBillingBlmLnsBytglDokKantorNo"/>
+
+<xs:element name="getDataBillingBlmLnsBytglDokKantorNoResponse" type="tns:getDataBillingBlmLnsBytglDokKantorNoResponse"/>
+
+<xs:element name="getDataBillingBlmLnsBytglDokKantorResponse" type="tns:getDataBillingBlmLnsBytglDokKantorResponse"/>
+
+<xs:element name="getDataBillingFtpStatusBykdbilling" type="tns:getDataBillingFtpStatusBykdbilling"/>
+
+<xs:element name="getDataBillingFtpStatusBykdbillingResponse" type="tns:getDataBillingFtpStatusBykdbillingResponse"/>
+
+<xs:element name="getDataBillingLnsBytglDokKantor" type="tns:getDataBillingLnsBytglDokKantor"/>
+
+<xs:element name="getDataBillingLnsBytglDokKantorJns" type="tns:getDataBillingLnsBytglDokKantorJns"/>
+
+<xs:element name="getDataBillingLnsBytglDokKantorJnsResponse" type="tns:getDataBillingLnsBytglDokKantorJnsResponse"/>
+
+<xs:element name="getDataBillingLnsBytglDokKantorNo" type="tns:getDataBillingLnsBytglDokKantorNo"/>
+
+<xs:element name="getDataBillingLnsBytglDokKantorNoResponse" type="tns:getDataBillingLnsBytglDokKantorNoResponse"/>
+
+<xs:element name="getDataBillingLnsBytglDokKantorResponse" type="tns:getDataBillingLnsBytglDokKantorResponse"/>
+
+<xs:element name="getDataDokDetail" type="tns:getDataDokDetail"/>
+
+<xs:element name="getDataDokDetailResponse" type="tns:getDataDokDetailResponse"/>
+
+<xs:element name="getDataDokMasterBytglDokKantor" type="tns:getDataDokMasterBytglDokKantor"/>
+
+<xs:element name="getDataDokMasterBytglDokKantorJns" type="tns:getDataDokMasterBytglDokKantorJns"/>
+
+<xs:element name="getDataDokMasterBytglDokKantorJnsResponse" type="tns:getDataDokMasterBytglDokKantorJnsResponse"/>
+
+<xs:element name="getDataDokMasterBytglDokKantorNo" type="tns:getDataDokMasterBytglDokKantorNo"/>
+
+<xs:element name="getDataDokMasterBytglDokKantorNoResponse" type="tns:getDataDokMasterBytglDokKantorNoResponse"/>
+
+<xs:element name="getDataDokMasterBytglDokKantorResponse" type="tns:getDataDokMasterBytglDokKantorResponse"/>
+
+<xs:element name="getDataDual" type="tns:getDataDual"/>
+
+<xs:element name="getDataDualResponse" type="tns:getDataDualResponse"/>
+
+<xs:element name="getDataKirimKeSkp" type="tns:getDataKirimKeSkp"/>
+
+<xs:element name="getDataKirimKeSkpByTgl" type="tns:getDataKirimKeSkpByTgl"/>
+
+<xs:element name="getDataKirimKeSkpByTglResponse" type="tns:getDataKirimKeSkpByTglResponse"/>
+
+<xs:element name="getDataKirimKeSkpResponse" type="tns:getDataKirimKeSkpResponse"/>
+
+<xs:element name="getDataKirimMpn" type="tns:getDataKirimMpn"/>
+
+<xs:element name="getDataKirimMpnByTgl" type="tns:getDataKirimMpnByTgl"/>
+
+<xs:element name="getDataKirimMpnByTglResponse" type="tns:getDataKirimMpnByTglResponse"/>
+
+<xs:element name="getDataKirimMpnResponse" type="tns:getDataKirimMpnResponse"/>
+
+<xs:element name="getDataPIBs" type="tns:getDataPIBs"/>
+
+<xs:element name="getDataPIBsByIdImportir" type="tns:getDataPIBsByIdImportir"/>
+
+<xs:element name="getDataPIBsByIdImportirResponse" type="tns:getDataPIBsByIdImportirResponse"/>
+
+<xs:element name="getDataPIBsCount" type="tns:getDataPIBsCount"/>
+
+<xs:element name="getDataPIBsCountResponse" type="tns:getDataPIBsCountResponse"/>
+
+<xs:element name="getDataPIBsResponse" type="tns:getDataPIBsResponse"/>
+
+<xs:element name="getDetailBillingBlmLnsBytglDok" type="tns:getDetailBillingBlmLnsBytglDok"/>
+
+<xs:element name="getDetailBillingBlmLnsBytglDokResponse" type="tns:getDetailBillingBlmLnsBytglDokResponse"/>
+
+<xs:element name="getDetailBillingLnsBytglDok" type="tns:getDetailBillingLnsBytglDok"/>
+
+<xs:element name="getDetailBillingLnsBytglDokResponse" type="tns:getDetailBillingLnsBytglDokResponse"/>
+
+<xs:element name="getJnsDok" type="tns:getJnsDok"/>
+
+<xs:element name="getJnsDokResponse" type="tns:getJnsDokResponse"/>
+
+<xs:element name="getKdDok" type="tns:getKdDok"/>
+
+<xs:element name="getKdDokResponse" type="tns:getKdDokResponse"/>
+
+<xs:element name="getNmKantor" type="tns:getNmKantor"/>
+
+<xs:element name="getNmKantorResponse" type="tns:getNmKantorResponse"/>
+
+<xs:element name="getStatus" type="tns:getStatus"/>
+
+<xs:element name="getStatusByTgl" type="tns:getStatusByTgl"/>
+
+<xs:element name="getStatusByTglResponse" type="tns:getStatusByTglResponse"/>
+
+<xs:element name="getStatusResponse" type="tns:getStatusResponse"/>
+
+<xs:element name="getTpParData" type="tns:getTpParData"/>
+
+<xs:element name="getTpParDataResponse" type="tns:getTpParDataResponse"/>
+
+<xs:element name="getTrBillDok" type="tns:getTrBillDok"/>
+
+<xs:element name="getTrBillDokResponse" type="tns:getTrBillDokResponse"/>
+
+<xs:element name="getTrBillingAkun" type="tns:getTrBillingAkun"/>
+
+<xs:element name="getTrBillingAkunResponse" type="tns:getTrBillingAkunResponse"/>
+
+<xs:element name="getUrAkun" type="tns:getUrAkun"/>
+
+<xs:element name="getUrAkunResponse" type="tns:getUrAkunResponse"/>
+
+<xs:element name="getUrStatus" type="tns:getUrStatus"/>
+
+<xs:element name="getUrStatusResponse" type="tns:getUrStatusResponse"/>
+
+<xs:element name="insertTdDokCicilDetail" type="tns:insertTdDokCicilDetail"/>
+
+<xs:element name="insertTdDokCicilDetailResponse" type="tns:insertTdDokCicilDetailResponse"/>
+
+<xs:element name="insertTdDokCicilMaster" type="tns:insertTdDokCicilMaster"/>
+
+<xs:element name="insertTdDokCicilMasterResponse" type="tns:insertTdDokCicilMasterResponse"/>
+
+<xs:element name="kirimUlangMpn" type="tns:kirimUlangMpn"/>
+
+<xs:element name="kirimUlangMpnResponse" type="tns:kirimUlangMpnResponse"/>
+
+<xs:element name="kirimUlangSkp" type="tns:kirimUlangSkp"/>
+
+<xs:element name="kirimUlangSkpResponse" type="tns:kirimUlangSkpResponse"/>
+
+<xs:element name="listKantor" type="tns:listKantor"/>
+
+<xs:element name="listKantorResponse" type="tns:listKantorResponse"/>
+
+<xs:element name="pembatalan" type="tns:pembatalan"/>
+
+<xs:element name="pembatalanResponse" type="tns:pembatalanResponse"/>
+
+<xs:element name="savePIB" type="tns:savePIB"/>
+
+<xs:element name="savePIBResponse" type="tns:savePIBResponse"/>
+
+<xs:complexType name="getDataKirimKeSkpByTgl">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataKirimKeSkpByTglResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tdBillingMaster" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tdBillingMaster">
+<xs:sequence>
+<xs:element name="alasanBatal" type="xs:string" minOccurs="0"/>
+<xs:element name="currency" type="xs:string" minOccurs="0"/>
+<xs:element name="errorCode" type="xs:string" minOccurs="0"/>
+<xs:element name="flBatal" type="xs:string" minOccurs="0"/>
+<xs:element name="flRekon" type="xs:string" minOccurs="0"/>
+<xs:element name="idWajibBayar" type="xs:string" minOccurs="0"/>
+<xs:element name="jmlRecordDetail" type="xs:int"/>
+<xs:element name="kdDok" type="xs:string" minOccurs="0"/>
+<xs:element name="kdIdWajibBayar" type="xs:string" minOccurs="0"/>
+<xs:element name="kdKantor" type="xs:string" minOccurs="0"/>
+<xs:element name="keyUnik" type="xs:string" minOccurs="0"/>
+<xs:element name="kodeBank" type="xs:string" minOccurs="0"/>
+<xs:element name="kodeBankCabang" type="xs:string" minOccurs="0"/>
+<xs:element name="kodeBilling" type="xs:string" minOccurs="0"/>
+<xs:element name="nipRekam" type="xs:string" minOccurs="0"/>
+<xs:element name="nipUpd" type="xs:string" minOccurs="0"/>
+<xs:element name="nmWajibBayar" type="xs:string" minOccurs="0"/>
+<xs:element name="noDok" type="xs:string" minOccurs="0"/>
+<xs:element name="noRekening" type="xs:string" minOccurs="0"/>
+<xs:element name="noStrukBayar" type="xs:string" minOccurs="0"/>
+<xs:element name="ntb" type="xs:string" minOccurs="0"/>
+<xs:element name="ntpn" type="xs:string" minOccurs="0"/>
+<xs:element name="seqDok" type="xs:string" minOccurs="0"/>
+<xs:element name="seriBilling" type="xs:int"/>
+<xs:element name="status" type="xs:string" minOccurs="0"/>
+<xs:element name="tglBilling" type="xs:string" minOccurs="0"/>
+<xs:element name="tglBuku" type="xs:string" minOccurs="0"/>
+<xs:element name="tglDok" type="xs:string" minOccurs="0"/>
+<xs:element name="tglExpired" type="xs:string" minOccurs="0"/>
+<xs:element name="tglNtb" type="xs:string" minOccurs="0"/>
+<xs:element name="tglNtpn" type="xs:string" minOccurs="0"/>
+<xs:element name="totTagihan" type="xs:long"/>
+<xs:element name="totalDibayar" type="xs:long"/>
+<xs:element name="totalTagihan" type="xs:long"/>
+<xs:element name="traceId" type="xs:string" minOccurs="0"/>
+<xs:element name="typeMedia" type="xs:string" minOccurs="0"/>
+<xs:element name="typeSumberData" type="xs:string" minOccurs="0"/>
+<xs:element name="wkRekam" type="xs:string" minOccurs="0"/>
+<xs:element name="wkStatus" type="xs:string" minOccurs="0"/>
+<xs:element name="wkUpd" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataBillingLnsBytglDokKantorJns">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+<xs:element name="arg3" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataBillingLnsBytglDokKantorJnsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:dataBrowseBilling" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dataBrowseBilling">
+<xs:sequence>
+<xs:element name="cabBank" type="xs:string" minOccurs="0"/>
+<xs:element name="currency" type="xs:string" minOccurs="0"/>
+<xs:element name="errorCode" type="xs:string" minOccurs="0"/>
+<xs:element name="idWajibBayar" type="xs:string" minOccurs="0"/>
+<xs:element name="kdDok" type="xs:string" minOccurs="0"/>
+<xs:element name="kdId" type="xs:string" minOccurs="0"/>
+<xs:element name="kdKantor" type="xs:string" minOccurs="0"/>
+<xs:element name="kodeBank" type="xs:string" minOccurs="0"/>
+<xs:element name="kodeBilling" type="xs:string" minOccurs="0"/>
+<xs:element name="nmWajibBayar" type="xs:string" minOccurs="0"/>
+<xs:element name="noDok" type="xs:string" minOccurs="0"/>
+<xs:element name="noRek" type="xs:string" minOccurs="0"/>
+<xs:element name="noStrukBay" type="xs:string" minOccurs="0"/>
+<xs:element name="ntb" type="xs:string" minOccurs="0"/>
+<xs:element name="ntpn" type="xs:string" minOccurs="0"/>
+<xs:element name="status" type="xs:string" minOccurs="0"/>
+<xs:element name="tglBilling" type="xs:string" minOccurs="0"/>
+<xs:element name="tglBuku" type="xs:string" minOccurs="0"/>
+<xs:element name="tglDok" type="xs:string" minOccurs="0"/>
+<xs:element name="tglExpired" type="xs:string" minOccurs="0"/>
+<xs:element name="tglNtb" type="xs:string" minOccurs="0"/>
+<xs:element name="tglNtpn" type="xs:string" minOccurs="0"/>
+<xs:element name="totalTagihan" type="xs:long" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUrAkun">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUrAkunResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getNmKantor">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getNmKantorResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:trKantor" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="trKantor">
+<xs:sequence>
+<xs:element name="errorCode" type="xs:string" minOccurs="0"/>
+<xs:element name="kdKantor" type="xs:string" minOccurs="0"/>
+<xs:element name="nmKantor" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStatusByTgl">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStatusByTglResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:dataBillingStatus" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dataBillingStatus">
+<xs:sequence>
+<xs:element name="cabBank" type="xs:string" minOccurs="0"/>
+<xs:element name="errorCode" type="xs:string" minOccurs="0"/>
+<xs:element name="idStatus" type="xs:string" minOccurs="0"/>
+<xs:element name="idWajibBayar" type="xs:string" minOccurs="0"/>
+<xs:element name="kdDok" type="xs:string" minOccurs="0"/>
+<xs:element name="kdId" type="xs:string" minOccurs="0"/>
+<xs:element name="kdKantor" type="xs:string" minOccurs="0"/>
+<xs:element name="kodeBank" type="xs:string" minOccurs="0"/>
+<xs:element name="kodeBilling" type="xs:string" minOccurs="0"/>
+<xs:element name="nipRekam" type="xs:string" minOccurs="0"/>
+<xs:element name="nipUpd" type="xs:string" minOccurs="0"/>
+<xs:element name="nmWajibBayar" type="xs:string" minOccurs="0"/>
+<xs:element name="noDok" type="xs:string" minOccurs="0"/>
+<xs:element name="noRek" type="xs:string" minOccurs="0"/>
+<xs:element name="noStrukBay" type="xs:string" minOccurs="0"/>
+<xs:element name="ntb" type="xs:string" minOccurs="0"/>
+<xs:element name="ntpn" type="xs:string" minOccurs="0"/>
+<xs:element name="tglBilling" type="xs:string" minOccurs="0"/>
+<xs:element name="tglBuku" type="xs:string" minOccurs="0"/>
+<xs:element name="tglDok" type="xs:string" minOccurs="0"/>
+<xs:element name="tglExpired" type="xs:string" minOccurs="0"/>
+<xs:element name="tglNtb" type="xs:string" minOccurs="0"/>
+<xs:element name="tglNtpn" type="xs:string" minOccurs="0"/>
+<xs:element name="totalTagihan" type="xs:long" minOccurs="0"/>
+<xs:element name="wkRekam" type="xs:string" minOccurs="0"/>
+<xs:element name="wkStatus" type="xs:string" minOccurs="0"/>
+<xs:element name="wkUpd" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataBillingAllBytglDokKantorNo">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+<xs:element name="arg3" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataBillingAllBytglDokKantorNoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:dataBrowseBilling" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataDokDetail">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataDokDetailResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tdDokDetail" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tdDokDetail">
+<xs:sequence>
+<xs:element name="akun" type="xs:string" minOccurs="0"/>
+<xs:element name="errorCode" type="xs:string" minOccurs="0"/>
+<xs:element name="idWajibBayar" type="xs:string" minOccurs="0"/>
+<xs:element name="nilaiTagihan" type="xs:decimal" minOccurs="0"/>
+<xs:element name="nipRekam" type="xs:string" minOccurs="0"/>
+<xs:element name="nipUpd" type="xs:string" minOccurs="0"/>
+<xs:element name="parameterId" type="xs:string" minOccurs="0"/>
+<xs:element name="seqDok" type="xs:string" minOccurs="0"/>
+<xs:element name="wkRekam" type="xs:string" minOccurs="0"/>
+<xs:element name="wkUpd" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataBillingBatalBytglDokBill">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+<xs:element name="arg3" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataBillingBatalBytglDokBillResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tdBillingMaster" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getJnsDok">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getJnsDokResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:trBillingDokumen" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="trBillingDokumen">
+<xs:sequence>
+<xs:element name="errorCode" type="xs:string" minOccurs="0"/>
+<xs:element name="flAuto" type="xs:string" minOccurs="0"/>
+<xs:element name="kdDok" type="xs:string" minOccurs="0"/>
+<xs:element name="nmDok" type="xs:string" minOccurs="0"/>
+<xs:element name="uraian" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataDokMasterBytglDokKantorNo">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+<xs:element name="arg3" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataDokMasterBytglDokKantorNoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tdDokMaster" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tdDokMaster">
+<xs:sequence>
+<xs:element name="currency" type="xs:string" minOccurs="0"/>
+<xs:element name="errorCode" type="xs:string" minOccurs="0"/>
+<xs:element name="flAuto" type="xs:string" minOccurs="0"/>
+<xs:element name="flCicil" type="xs:string" minOccurs="0"/>
+<xs:element name="flagBatal" type="xs:string" minOccurs="0"/>
+<xs:element name="idWajibBayar" type="xs:string" minOccurs="0"/>
+<xs:element name="kdDok" type="xs:string" minOccurs="0"/>
+<xs:element name="kdIdWajibBayar" type="xs:string" minOccurs="0"/>
+<xs:element name="kdKantor" type="xs:string" minOccurs="0"/>
+<xs:element name="kodeBilling" type="xs:string" minOccurs="0"/>
+<xs:element name="namaWajibBayar" type="xs:string" minOccurs="0"/>
+<xs:element name="nipRekam" type="xs:string" minOccurs="0"/>
+<xs:element name="nipUpd" type="xs:string" minOccurs="0"/>
+<xs:element name="noDok" type="xs:string" minOccurs="0"/>
+<xs:element name="noSkep" type="xs:string" minOccurs="0"/>
+<xs:element name="seqDok" type="xs:string" minOccurs="0"/>
+<xs:element name="status" type="xs:string" minOccurs="0"/>
+<xs:element name="tglDok" type="xs:string" minOccurs="0"/>
+<xs:element name="tglJtTempo" type="xs:string" minOccurs="0"/>
+<xs:element name="tglJtTempoTunda" type="xs:string" minOccurs="0"/>
+<xs:element name="tglSkep" type="xs:string" minOccurs="0"/>
+<xs:element name="totalTagihan" type="xs:long"/>
+<xs:element name="wkRekam" type="xs:string" minOccurs="0"/>
+<xs:element name="wkStatus" type="xs:string" minOccurs="0"/>
+<xs:element name="wkUpd" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataBillingBlmLnsBytglDokKantorNo">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+<xs:element name="arg3" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataBillingBlmLnsBytglDokKantorNoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:dataBrowseBilling" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getBilling">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getBillingResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tdBillingMaster" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataPIBsByIdImportir">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataPIBsByIdImportirResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:dataPIB" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dataPIB">
+<xs:sequence>
+<xs:element name="car" type="xs:string" minOccurs="0"/>
+<xs:element name="errorCode" type="xs:string" minOccurs="0"/>
+<xs:element name="nilaiBM" type="xs:decimal" minOccurs="0"/>
+<xs:element name="nmPPJK" type="xs:string" minOccurs="0"/>
+<xs:element name="noPIB" type="xs:int"/>
+<xs:element name="tglPIB" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataKirimMpn">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+<xs:element name="arg3" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataKirimMpnResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tdBillingMaster" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataDual">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataDualResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataBillingBlmLnsBytglDokKantorJns">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+<xs:element name="arg3" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataBillingBlmLnsBytglDokKantorJnsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:dataBrowseBilling" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStatus">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+<xs:element name="arg3" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getStatusResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:dataBillingStatus" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="kirimUlangMpn">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="kirimUlangMpnResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataKirimMpnByTgl">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataKirimMpnByTglResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tdBillingMaster" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataBillingBatalBytglDokNo">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+<xs:element name="arg3" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataBillingBatalBytglDokNoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tdBillingMaster" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTrBillDok">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getTrBillDokResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:trBillingDokumen" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataBillingBlmLnsBytglDokKantor">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataBillingBlmLnsBytglDokKantorResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:dataBrowseBilling" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTpParData">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTpParDataResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tpParData" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tpParData">
+<xs:sequence>
+<xs:element name="kdPar" type="xs:string" minOccurs="0"/>
+<xs:element name="nmPar" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="savePIB">
+<xs:sequence>
+<xs:element name="arg0" type="tns:tdPIB" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tdPIB">
+<xs:sequence>
+<xs:element name="car" type="xs:string" minOccurs="0"/>
+<xs:element name="errorCode" type="xs:string" minOccurs="0"/>
+<xs:element name="idImportir" type="xs:string" minOccurs="0"/>
+<xs:element name="idPPJK" type="xs:string" minOccurs="0"/>
+<xs:element name="nilaiBM" type="xs:decimal" minOccurs="0"/>
+<xs:element name="noPIB" type="xs:int"/>
+<xs:element name="seqPIB" type="xs:long"/>
+<xs:element name="tglPIB" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="savePIBResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTrBillingAkun">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTrBillingAkunResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tpParData" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="kirimUlangSkp">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="kirimUlangSkpResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDetailBillingBlmLnsBytglDok">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDetailBillingBlmLnsBytglDokResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tdBillingDetail" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tdBillingDetail">
+<xs:sequence>
+<xs:element name="akun" type="xs:string" minOccurs="0"/>
+<xs:element name="currency" type="xs:string" minOccurs="0"/>
+<xs:element name="errorCode" type="xs:string" minOccurs="0"/>
+<xs:element name="idWajibBayar" type="xs:string" minOccurs="0"/>
+<xs:element name="keyUnik" type="xs:string" minOccurs="0"/>
+<xs:element name="kodeBilling" type="xs:string" minOccurs="0"/>
+<xs:element name="nilaiTagihan" type="xs:decimal" minOccurs="0"/>
+<xs:element name="nipRekam" type="xs:string" minOccurs="0"/>
+<xs:element name="nipUpd" type="xs:string" minOccurs="0"/>
+<xs:element name="parameterId" type="xs:string" minOccurs="0"/>
+<xs:element name="wkRekam" type="xs:string" minOccurs="0"/>
+<xs:element name="wkUpd" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataBillingBatalBytglDok">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataBillingBatalBytglDokResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tdBillingMaster" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDetailBillingLnsBytglDok">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDetailBillingLnsBytglDokResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tdBillingDetail" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataBillingLnsBytglDokKantor">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataBillingLnsBytglDokKantorResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:dataBrowseBilling" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUrStatus">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUrStatusResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:trBillingStatus" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="trBillingStatus">
+<xs:sequence>
+<xs:element name="errorCode" type="xs:string" minOccurs="0"/>
+<xs:element name="idStatus" type="xs:string" minOccurs="0"/>
+<xs:element name="kdStatus" type="xs:string" minOccurs="0"/>
+<xs:element name="uraian" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listKantor">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listKantorResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:trKantor" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataKirimKeSkp">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+<xs:element name="arg3" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataKirimKeSkpResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tdBillingMaster" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataBillingAllBytglDokKantorJns">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+<xs:element name="arg3" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataBillingAllBytglDokKantorJnsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:dataBrowseBilling" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getKdDok">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getKdDokResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:trBillingDokumen" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataBillingLnsBytglDokKantorNo">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+<xs:element name="arg3" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataBillingLnsBytglDokKantorNoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:dataBrowseBilling" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataDokMasterBytglDokKantor">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataDokMasterBytglDokKantorResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tdDokMaster" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataBillingAllBytglDokKantor">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataBillingAllBytglDokKantorResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:dataBrowseBilling" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertTdDokCicilDetail">
+<xs:sequence>
+<xs:element name="arg0" type="tns:tdDokCicilDetail" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tdDokCicilDetail">
+<xs:sequence>
+<xs:element name="akun" type="xs:string" minOccurs="0"/>
+<xs:element name="errorCode" type="xs:string" minOccurs="0"/>
+<xs:element name="nilaiCicil" type="xs:int"/>
+<xs:element name="nipRekam" type="xs:string" minOccurs="0"/>
+<xs:element name="nipUpd" type="xs:string" minOccurs="0"/>
+<xs:element name="seqDok" type="xs:string" minOccurs="0"/>
+<xs:element name="seriCicil" type="xs:int"/>
+<xs:element name="wkRekam" type="xs:string" minOccurs="0"/>
+<xs:element name="wkUpd" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertTdDokCicilDetailResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertTdDokCicilMaster">
+<xs:sequence>
+<xs:element name="arg0" type="tns:tdDokCicilMaster" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tdDokCicilMaster">
+<xs:sequence>
+<xs:element name="errorCode" type="xs:string" minOccurs="0"/>
+<xs:element name="idWajibBayar" type="xs:string" minOccurs="0"/>
+<xs:element name="kodeBilling" type="xs:string" minOccurs="0"/>
+<xs:element name="nipRekam" type="xs:string" minOccurs="0"/>
+<xs:element name="nipUpd" type="xs:string" minOccurs="0"/>
+<xs:element name="seqDok" type="xs:string" minOccurs="0"/>
+<xs:element name="seriCicil" type="xs:int"/>
+<xs:element name="tglJtTempo" type="xs:string" minOccurs="0"/>
+<xs:element name="wkRekam" type="xs:string" minOccurs="0"/>
+<xs:element name="wkUpd" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertTdDokCicilMasterResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataDokMasterBytglDokKantorJns">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+<xs:element name="arg3" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataDokMasterBytglDokKantorJnsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tdDokMaster" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataBillingFtpStatusBykdbilling">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataBillingFtpStatusBykdbillingResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tdBillingFtpStatus" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tdBillingFtpStatus">
+<xs:sequence>
+<xs:element name="errorCode" type="xs:string" minOccurs="0"/>
+<xs:element name="kdFtp" type="xs:string" minOccurs="0"/>
+<xs:element name="keterangan" type="xs:string" minOccurs="0"/>
+<xs:element name="kodeBilling" type="xs:string" minOccurs="0"/>
+<xs:element name="nipRekam" type="xs:string" minOccurs="0"/>
+<xs:element name="nipUpd" type="xs:string" minOccurs="0"/>
+<xs:element name="status" type="xs:string" minOccurs="0"/>
+<xs:element name="wkRekam" type="xs:string" minOccurs="0"/>
+<xs:element name="wkSend" type="xs:string" minOccurs="0"/>
+<xs:element name="wkUpd" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataPIBsCount">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getDataPIBsCountResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataPIBs">
+<xs:sequence>
+<xs:element name="arg0" type="xs:long"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDataPIBsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:dataPIB" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="pembatalan">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="pembatalanResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/gudangService/gudang?wsdl" uri="xml-resources/web-service-references/gudang/wsdl/localhost_8080/gudangService/gudang.wsdl"/>
+    <system systemId="http://localhost:8080/gudangService/gudang?xsd=1" uri="xml-resources/web-service-references/gudang/wsdl/localhost_8080/gudangService/gudang.xsd_1.xsd"/>
+</catalog>

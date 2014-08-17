@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1.1-b09 (branches/2.1-6834; 2011-07-16T17:14:48+0000) JAXWS-RI/2.2.5-promoted-b04 JAXWS/2.2. --><xs:schema xmlns:tns="http://service.mpn.customs.go.id/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service.mpn.customs.go.id/">
+
+<xs:element name="getDokumen" type="tns:getDokumen"/>
+
+<xs:element name="getDokumenResponse" type="tns:getDokumenResponse"/>
+
+<xs:complexType name="getDokumen">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getDokumenResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:trBillingDokumen" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="trBillingDokumen">
+<xs:sequence>
+<xs:element name="errorCode" type="xs:string" minOccurs="0"/>
+<xs:element name="flAuto" type="xs:string" minOccurs="0"/>
+<xs:element name="kdDok" type="xs:string" minOccurs="0"/>
+<xs:element name="nmDok" type="xs:string" minOccurs="0"/>
+<xs:element name="uraian" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://10.0.16.126/MPNInhouseService/MPNInhouse?WSDL" uri="xml-resources/web-service-references/MPNInhouse/wsdl/10.0.16.126/MPNInhouseService/MPNInhouse.wsdl"/>
+    <system systemId="http://10.0.16.126:80/MPNInhouseService/MPNInhouse?xsd=1" uri="xml-resources/web-service-references/MPNInhouse/wsdl/10.0.16.126_80/MPNInhouseService/MPNInhouse.xsd_1.xsd"/>
+    <system systemId="http://10.0.16.126/MPNPublicService/MPNPublic?WSDL" uri="xml-resources/web-service-references/MPNPublic/wsdl/10.0.16.126/MPNPublicService/MPNPublic.wsdl"/>
+    <system systemId="http://10.0.16.126:80/MPNPublicService/MPNPublic?xsd=1" uri="xml-resources/web-service-references/MPNPublic/wsdl/10.0.16.126_80/MPNPublicService/MPNPublic.xsd_1.xsd"/>
+    <system systemId="http://10.0.16.126/CukaiService/Cukai?WSDL" uri="xml-resources/web-service-references/Cukai/wsdl/10.0.16.126/CukaiService/Cukai.wsdl"/>
+    <system systemId="http://10.0.16.126:80/CukaiService/Cukai?xsd=1" uri="xml-resources/web-service-references/Cukai/wsdl/10.0.16.126_80/CukaiService/Cukai.xsd_1.xsd"/>
+    <system systemId="http://10.0.16.126/MPNBackgroundProsesService/MPNBackgroundProses?wsdl" uri="xml-resources/web-service-references/MPNBackgroundProses/wsdl/10.0.16.126/MPNBackgroundProsesService/MPNBackgroundProses.wsdl"/>
+    <system systemId="http://10.0.16.126:80/MPNBackgroundProsesService/MPNBackgroundProses?xsd=1" uri="xml-resources/web-service-references/MPNBackgroundProses/wsdl/10.0.16.126_80/MPNBackgroundProsesService/MPNBackgroundProses.xsd_1.xsd"/>
+    <system systemId="http://10.0.16.126/MPNReferensiService/MPNReferensi?wsdl" uri="xml-resources/web-service-references/MPNReferensi/wsdl/10.0.16.126/MPNReferensiService/MPNReferensi.wsdl"/>
+    <system systemId="http://10.0.16.126:80/MPNReferensiService/MPNReferensi?xsd=1" uri="xml-resources/web-service-references/MPNReferensi/wsdl/10.0.16.126_80/MPNReferensiService/MPNReferensi.xsd_1.xsd"/>
+</catalog>

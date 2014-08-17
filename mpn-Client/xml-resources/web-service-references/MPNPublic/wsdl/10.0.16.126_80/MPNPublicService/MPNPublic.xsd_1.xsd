@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1.1-b09 (branches/2.1-6834; 2011-07-16T17:14:48+0000) JAXWS-RI/2.2.5-promoted-b04 JAXWS/2.2. --><xs:schema xmlns:tns="http://service.mpn.customs.go.id/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service.mpn.customs.go.id/">
+
+<xs:element name="insertDokDetailSKP" type="tns:insertDokDetailSKP"/>
+
+<xs:element name="insertDokDetailSKPResponse" type="tns:insertDokDetailSKPResponse"/>
+
+<xs:element name="insertDokMasterSKP" type="tns:insertDokMasterSKP"/>
+
+<xs:element name="insertDokMasterSKPResponse" type="tns:insertDokMasterSKPResponse"/>
+
+<xs:element name="insertTpLOg" type="tns:insertTpLOg"/>
+
+<xs:element name="insertTpLOgResponse" type="tns:insertTpLOgResponse"/>
+
+<xs:element name="insertTtBillingRes" type="tns:insertTtBillingRes"/>
+
+<xs:element name="insertTtBillingResResponse" type="tns:insertTtBillingResResponse"/>
+
+<xs:element name="kirimBilling" type="tns:kirimBilling"/>
+
+<xs:element name="kirimBillingResponse" type="tns:kirimBillingResponse"/>
+
+<xs:complexType name="kirimBilling">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="kirimBillingResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertDokMasterSKP">
+<xs:sequence>
+<xs:element name="arg0" type="tns:tdDokMaster" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tdDokMaster">
+<xs:sequence>
+<xs:element name="currency" type="xs:string" minOccurs="0"/>
+<xs:element name="errorCode" type="xs:string" minOccurs="0"/>
+<xs:element name="flAuto" type="xs:string" minOccurs="0"/>
+<xs:element name="flCicil" type="xs:string" minOccurs="0"/>
+<xs:element name="flagBatal" type="xs:string" minOccurs="0"/>
+<xs:element name="idWajibBayar" type="xs:string" minOccurs="0"/>
+<xs:element name="kdDok" type="xs:string" minOccurs="0"/>
+<xs:element name="kdIdWajibBayar" type="xs:string" minOccurs="0"/>
+<xs:element name="kdKantor" type="xs:string" minOccurs="0"/>
+<xs:element name="kodeBilling" type="xs:string" minOccurs="0"/>
+<xs:element name="namaWajibBayar" type="xs:string" minOccurs="0"/>
+<xs:element name="nipRekam" type="xs:string" minOccurs="0"/>
+<xs:element name="nipUpd" type="xs:string" minOccurs="0"/>
+<xs:element name="noDok" type="xs:string" minOccurs="0"/>
+<xs:element name="noSkep" type="xs:string" minOccurs="0"/>
+<xs:element name="seqDok" type="xs:string" minOccurs="0"/>
+<xs:element name="status" type="xs:string" minOccurs="0"/>
+<xs:element name="tglDok" type="xs:string" minOccurs="0"/>
+<xs:element name="tglJtTempo" type="xs:string" minOccurs="0"/>
+<xs:element name="tglJtTempoTunda" type="xs:string" minOccurs="0"/>
+<xs:element name="tglSkep" type="xs:string" minOccurs="0"/>
+<xs:element name="totalTagihan" type="xs:long"/>
+<xs:element name="wkRekam" type="xs:string" minOccurs="0"/>
+<xs:element name="wkStatus" type="xs:string" minOccurs="0"/>
+<xs:element name="wkUpd" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertDokMasterSKPResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertDokDetailSKP">
+<xs:sequence>
+<xs:element name="arg0" type="tns:tdDokDetail" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tdDokDetail">
+<xs:sequence>
+<xs:element name="akun" type="xs:string" minOccurs="0"/>
+<xs:element name="errorCode" type="xs:string" minOccurs="0"/>
+<xs:element name="idWajibBayar" type="xs:string" minOccurs="0"/>
+<xs:element name="nilaiTagihan" type="xs:decimal" minOccurs="0"/>
+<xs:element name="nipRekam" type="xs:string" minOccurs="0"/>
+<xs:element name="nipUpd" type="xs:string" minOccurs="0"/>
+<xs:element name="parameterId" type="xs:string" minOccurs="0"/>
+<xs:element name="seqDok" type="xs:string" minOccurs="0"/>
+<xs:element name="wkRekam" type="xs:string" minOccurs="0"/>
+<xs:element name="wkUpd" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertDokDetailSKPResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertTtBillingRes">
+<xs:sequence>
+<xs:element name="arg0" type="tns:ttBillingRes" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ttBillingRes">
+<xs:sequence>
+<xs:element name="errorCode" type="xs:string" minOccurs="0"/>
+<xs:element name="idWajibBayar" type="xs:string" minOccurs="0"/>
+<xs:element name="kdDok" type="xs:string" minOccurs="0"/>
+<xs:element name="kdKantor" type="xs:string" minOccurs="0"/>
+<xs:element name="kodeBank" type="xs:string" minOccurs="0"/>
+<xs:element name="kodeBilling" type="xs:string" minOccurs="0"/>
+<xs:element name="nilaiBayar" type="xs:long"/>
+<xs:element name="nipRekam" type="xs:string" minOccurs="0"/>
+<xs:element name="nipUpd" type="xs:string" minOccurs="0"/>
+<xs:element name="nmWajibBayar" type="xs:string" minOccurs="0"/>
+<xs:element name="noDok" type="xs:string" minOccurs="0"/>
+<xs:element name="noRekening" type="xs:string" minOccurs="0"/>
+<xs:element name="noStrukBayar" type="xs:string" minOccurs="0"/>
+<xs:element name="ntb" type="xs:string" minOccurs="0"/>
+<xs:element name="ntpn" type="xs:string" minOccurs="0"/>
+<xs:element name="seqRespon" type="xs:string" minOccurs="0"/>
+<xs:element name="status" type="xs:string" minOccurs="0"/>
+<xs:element name="tglBilling" type="xs:string" minOccurs="0"/>
+<xs:element name="tglBuku" type="xs:string" minOccurs="0"/>
+<xs:element name="tglExpBilling" type="xs:string" minOccurs="0"/>
+<xs:element name="tglNtb" type="xs:string" minOccurs="0"/>
+<xs:element name="tglNtpn" type="xs:string" minOccurs="0"/>
+<xs:element name="typeMedia" type="xs:string" minOccurs="0"/>
+<xs:element name="wkRekam" type="xs:string" minOccurs="0"/>
+<xs:element name="wkUpd" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertTtBillingResResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertTpLOg">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+<xs:element name="arg3" type="xs:string" minOccurs="0"/>
+<xs:element name="arg4" type="xs:string" minOccurs="0"/>
+<xs:element name="arg5" type="xs:string" minOccurs="0"/>
+<xs:element name="arg6" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertTpLOgResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?page id="modulGudang" title="Gudang"?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="winIndex" height="100%" width="100%" apply="house.go.id.controller.indexController">
+        <borderlayout>
+            <north  id="topPanel" border="none">
+                <div>
+                    <iframe id="frameHeader" width="100%" height="68px" style="border:0; padding:0; margin:0"/>
+                    <div>
+                        <menubar id="menubar"  style="border:#9ecad8 solid 1px">
+                            <menuitem label="Home" id="001" visible="true"/>
+                            <menu label="Management" id="010" visible="true">
+                                <menupopup>
+                                    <menuitem label="Barang" id="011" visible="true"/>
+                                </menupopup>
+                            </menu>
+                        </menubar>
+                    </div>
+                </div>
+            </north>
+            <west id="leftPanel" title="Navigasi" size="20%" flex="true" maxsize="250" open="false"
+                  splittable="true" collapsible="true" style="border-top:0" autoscroll="true">
+                <include id="leftInclude" />
+            </west>
+            <center border="normal" flex="true" style="border-top:0">
+                <borderlayout style="background-color:#fff;">
+                    <center id="mainPanel" title="Selamat Datang" border="none" autoscroll="true"
+                            style="border-bottom:#9ecad8 solid 1px">
+                        <include id="mainInclude" src="form/home.zul"/>
+                    </center>
+                    <south id="detailPanel" title="Detail" flex="true" height="35%" border="none"
+                           open="false" style="border-top:#9ecad8 solid 1px" autoscroll="true"
+                           collapsible="true" splittable="true">
+                        <include id="detailInclude" />
+                    </south>
+                </borderlayout>
+            </center>
+            <east id="rightPanel" title="Tools" size="25%" flex="true" open="false"
+                  maxsize="350" splittable="true" collapsible="true" style="border-top:0" autoscroll="true">
+                <include id="rightInclude" />
+            </east>
+        </borderlayout>
+    </window>
+</zk>

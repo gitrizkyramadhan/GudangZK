@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="winBarang" contentStyle="overflow:auto"  closable="false" apply="house.go.id.controller.management.ManBarangController">
+        <grid class="custom-grid">
+            <columns>
+                <column label="" width="15%"></column>
+                <column label="" width="85%"></column>
+            </columns>
+            
+            <rows>
+                <row>
+                    <label value="User" zclass="custom-label"/>
+                    <hbox>
+                        <label value="Operator"/>
+                    </hbox>
+                </row>
+                <row>
+                    <label value="Nama Barang" zclass="custom-label"/>
+                    <hbox>
+                        <textbox id="nmBarang"/>
+                    </hbox>
+                </row>
+                <row>
+                    <label value="Tanggal" zclass="custom-label"/>
+                    <hbox>
+                        <datebox id="tglAwal"/>
+                        s/d
+                        <datebox id="tglAkhir"/>
+                    </hbox>
+                </row>
+            </rows>
+        </grid>
+        <listbox id="listBarang" hflex="true">
+            <listhead>
+                <listheader width="5%" align="center">
+                    <label multiline="true" value="No." />
+                </listheader>
+                <listheader width="400px" align="center">
+                    <label multiline="true" value="Nama Barang" />
+                </listheader>
+                <listheader width="10%" align="center">
+                    <label multiline="true" value="Stok" />
+                </listheader>
+            </listhead>
+        </listbox>
+    </window>
+</zk>

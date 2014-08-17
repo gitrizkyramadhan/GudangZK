@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.1.1-b09 (branches/2.1-6834; 2011-07-16T17:14:48+0000) JAXWS-RI/2.2.5-promoted-b04 JAXWS/2.2. --><xs:schema xmlns:tns="http://service.go.id/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://service.go.id/">
+
+<xs:element name="getAllBarang" type="tns:getAllBarang"/>
+
+<xs:element name="getAllBarangResponse" type="tns:getAllBarangResponse"/>
+
+<xs:element name="nvl" type="tns:nvl"/>
+
+<xs:element name="nvlResponse" type="tns:nvlResponse"/>
+
+<xs:complexType name="nvl">
+<xs:sequence>
+<xs:element name="arg0" type="xs:anyType" minOccurs="0"/>
+<xs:element name="arg1" type="xs:anyType" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="nvlResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllBarang">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getAllBarangResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tdBarang" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tdBarang">
+<xs:sequence>
+<xs:element name="kdBarang" type="xs:string" minOccurs="0"/>
+<xs:element name="nmBarang" type="xs:string" minOccurs="0"/>
+<xs:element name="stok" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
